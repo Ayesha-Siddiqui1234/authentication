@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;   
+    /* horizontally centers the code */
+    align-items: center; 
+    /* vertically centers the form */
+    background-color: rgb(147, 47, 81);
+    height: 100vh;
+}
+
+.heading{
+    margin-bottom: 10px;
+    color:rebeccapurple ;
+
+}
+.form{
+    display: flex;
+    /* When you apply display: flex to a container, its child elements are arranged in a row (horizontally) by default.
+ */
+    flex-direction: column;
+/* make the all child vertically  flex direcion only work if display flex is set*/
+/* The flex-direction: column overrides the default row layout and instructs the container to arrange its child elements in a column (vertically).
+ */
+ /* Why No Conflict?
+display: flex Defines the Flexbox Context:
+
+It enables the container to use flexbox properties for alignment, spacing, and layout.
+flex-direction Customizes the Layout:
+
+The flex-direction property modifies how the flex items are laid out (either in a row, column, or other variations like reverse).
+ */
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: plum;
+    border: 4px solid rebeccapurple ;
+
+}
+.form input{
+    width: 100%;
+    border: 1px solid palevioletred;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#imm{
+    height: 100px;
+    width: 100px;
+}
+#signUp{
+    background-color:rgb(169, 15, 67) ;
+    /* color: plum; */
+    color: rgb(37, 2, 73);
+    margin-top: 20px;
+    border: 3px solid rebeccapurple ;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 20px;
+    font: 100px;
+}
+#signUp:hover{
+    background-color: plum;
+}
